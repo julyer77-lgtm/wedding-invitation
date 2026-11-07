@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아사쿠라 조 & 코가 유다이의 결혼식</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Pretendard', sans-serif; }
+        body { background-color: #fafafa; color: #333; line-height: 1.6; display: flex; justify-content: center; }
+        .container { width: 100%; max-width: 480px; background: #ffffff; min-height: 100vh; box-shadow: 0 0 20px rgba(0,0,0,0.05); position: relative; overflow: hidden; padding-bottom: 60px; }
+        
+        /* Snow effect */
+        .snow { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 10; background-image: radial-gradient(white 15%, transparent 16%), radial-gradient(white 15%, transparent 16%); background-size: 60px 60px; background-position: 0 0, 30px 30px; opacity: 0.6; animation: snowfall 10s linear infinite; }
+        @keyframes snowfall { 0% { background-position: 0 0, 30px 30px; } 100% { background-position: 0 600px, 30px 630px; } }
+
+        /* Header */
+        .header { text-align: center; padding: 60px 20px 40px; background: linear-gradient(to bottom, #f0f4f8, #ffffff); }
+        .header h3 { font-size: 14px; letter-spacing: 4px; color: #777; margin-bottom: 15px; text-transform: uppercase; }
+        .header h1 { font-size: 26px; font-weight: 600; color: #222; margin-bottom: 10px; }
+        .header p { font-size: 15px; color: #666; }
+
+        /* Main Image */
+        .photo-frame { padding: 0 25px; margin: 20px 0; }
+        .main-photo { width: 100%; height: 380px; background: #e8ecef; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #888; font-size: 14px; position: relative; overflow: hidden; }
+        .main-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* Greeting */
+        .greeting { padding: 40px 30px; text-align: center; }
+        .greeting h2 { font-size: 18px; font-weight: 500; margin-bottom: 20px; color: #111; }
+        .greeting p { font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 15px; }
+
+        /* Info Section */
+        .info-section { background: #f8f9fa; margin: 20px 25px; border-radius: 12px; padding: 25px; text-align: center; }
+        .info-section h3 { font-size: 16px; color: #222; margin-bottom: 10px; font-weight: 600; }
+        .info-section p { font-size: 14px; color: #555; margin-bottom: 5px; }
+
+        /* Audio Button */
+        .audio-btn { position: fixed; bottom: 20px; right: 20px; background: #222; color: #fff; border: none; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 100; box-shadow: 0 4px 10px rgba(0,0,0,0.2); font-size: 18px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="snow"></div>
+
+        <div class="header">
+            <h3>WEDDING INVITATION</h3>
+            <h1>아사쿠라 조 & 코가 유다이</h1>
+            <p>2025년 12월 25일 성탄절</p>
+        </div>
+
+        <div class="photo-frame">
+            <div class="main-photo">
+                <span>Holy Day Special Wedding</span>
+            </div>
+        </div>
+
+        <div class="greeting">
+            <h2>초대의 글</h2>
+            <p>아사쿠라 조와 유다이는 입술을 맞대며 영원의 사랑을 약속했던 오늘날의 홀리데이 시즌을 평생 잊지 못할 것입니다.</p>
+            <p>둘은 꽉 잡은 손을 놓지 않았고 그 손은 앞으로도 풀리지 않을 것입니다. 영원히.</p>
+            <p style="margin-top: 25px; font-weight: 500; color: #222;">도쿄 웨딩 홀</p>
+        </div>
+
+        <div class="info-section">
+            <h3>오시는 길</h3>
+            <p>일본 도쿄 특별 웨딩홀</p>
+            <p style="color: #888; font-size: 13px; margin-top: 8px;">12월 25일 크리스마스 당일</p>
+        </div>
+    </div>
+
+    <button class="audio-btn" onclick="alert('성탄절 축하 음악 재생 모드')">🎵</button>
+
+</body>
+</html>
